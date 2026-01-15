@@ -1,0 +1,10 @@
+name: HelloWorld
+on: [push] # triggers
+jobs: # like stages in jenkins
+  hello:
+    runs-on: ubuntu-latest
+    steps: # stages
+      - name: step1
+        run: echo "hello world"
+      - name: step2
+        run: echo "Hello Github Actions"
